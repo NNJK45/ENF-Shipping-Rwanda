@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENF Shipping Rwanda Ltd</title>
+  <meta name="description" content="ENF Shipping Rwanda Ltd – Import, logistics, warehousing, cargo handling and wholesale services in Rwanda and the Great Lakes region." />
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#1f2937;}
+    header{background:#0f172a;color:#fff;padding:40px 20px;position:relative;overflow:hidden;}
+    header h1{margin:0;font-size:32px;}
+    header p{margin:8px 0 0;max-width:720px;}
+    nav a{color:#c7d2fe;margin-right:16px;text-decoration:none;font-weight:600;}
+    section{padding:48px 20px;max-width:1100px;margin:auto;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:20px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.02);} 
+    .btn{display:inline-block;background:#2563eb;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;border:none;cursor:pointer;}
+    footer{background:#f3f4f6;padding:24px 20px;font-size:14px;}
+    .fab{position:fixed;right:18px;bottom:18px;display:flex;gap:10px;z-index:9999;}
+    .fab a{display:inline-flex;align-items:center;gap:10px;background:#16a34a;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 20px rgba(0,0,0,.15);} 
+    .fab svg{width:18px;height:18px;}
+    @media (max-width:520px){
+      header{padding:34px 16px;}
+      header h1{font-size:28px;}
+      .fab a span{display:none;}
+      .fab a{padding:12px;border-radius:999px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>ENF Shipping Rwanda Ltd</h1>
+    <p>Import • Export • Logistics • Tyres • Regional Trade</p>
+    <p style="margin-top:10px;opacity:.95;max-width:760px;">Reliable shipping, customs coordination and warehousing connecting Rwanda with East Africa and the Great Lakes region (including cross‑border trade to Goma/DRC).</p>
+    <p><a class="btn" href="#contact">Request a Quote</a></p>
+  </header>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card"><h3>Container Imports (New & Used Tyres)</h3><p>Procurement support, container planning and delivery coordination from ports to Kigali, Rubavu (Gisenyi) and surrounding regions.</p></div>
+      <div class="card"><h3>Clearing & Customs Support</h3><p>Document preparation and coordination with clearing agents for smooth customs processing and cargo release.</p></div>
+      <div class="card"><h3>Warehousing & Distribution</h3><p>Secure storage and fast distribution for tyres, machinery and general cargo.</p></div>
+      <div class="card"><h3>Transport & Last‑Mile Delivery</h3><p>Local trucking and delivery arrangements from terminal/warehouse to customer sites.</p></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ENF Shipping Rwanda Ltd is a Rwanda-registered enterprise providing import, logistics and trading services across Rwanda and the Great Lakes region. Our focus is efficiency, compliance and dependable customer service.</p>
+    <p style="margin-top:10px;">We work with trusted partners for shipping lines, inland transport and customs clearance to help you move goods quickly and safely.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <span title="We can switch this to info@enfshippingrwanda.com once Google Workspace verifies">fangmbeng@gmail.com</span></p>
+    <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/250796570742" target="_blank" rel="noopener">+250 796 570 742</a></p>
+    <p><strong>Address:</strong> Kigali, Nyarugenge, Rwanda</p>
+
+    <div class="card" style="margin-top:18px;">
+      <h3 style="margin-top:0;">Request a Quote</h3>
+      <p style="margin-top:6px;">Tell us what you need and we’ll reply quickly.</p>
+      <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote" />
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+          <div>
+            <label><strong>Name</strong><br><input name="name" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;" /></label>
+          </div>
+          <div>
+            <label><strong>Phone/WhatsApp</strong><br><input name="phone" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;" /></label>
+          </div>
+          <div>
+            <label><strong>Email</strong><br><input type="email" name="email" style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;" /></label>
+          </div>
+          <div>
+            <label><strong>Service</strong><br>
+              <select name="service" style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;">
+                <option>Container tyres (new/used)</option>
+                <option>Clearing & customs</option>
+                <option>Warehousing</option>
+                <option>Transport & delivery</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div style="margin-top:14px;">
+          <label><strong>Message</strong><br>
+            <textarea name="message" rows="4" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;"></textarea>
+          </label>
+        </div>
+        <p style="margin-top:14px;"><button class="btn" type="submit">Send Request</button></p>
+      </form>
+      <p style="font-size:13px;opacity:.75;margin:0;">Tip: On Netlify, form submissions appear under <em>Forms</em> in your dashboard.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> ENF Shipping Rwanda Ltd. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <div class="fab">
+    <a href="https://wa.me/250796570742" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.45 0 .06 5.39.06 12c0 2.11.55 4.18 1.6 6.01L0 24l6.16-1.61A11.93 11.93 0 0 0 12.06 24C18.67 24 24.06 18.61 24.06 12a11.9 11.9 0 0 0-3.54-8.52ZM12.06 22.02c-1.86 0-3.69-.5-5.3-1.45l-.38-.22-3.65.96.97-3.55-.25-.37A9.94 9.94 0 0 1 2.06 12C2.06 6.5 6.56 2 12.06 2c2.65 0 5.14 1.03 7.01 2.9A9.85 9.85 0 0 1 21.99 12c0 5.5-4.43 10.02-9.93 10.02Zm5.77-7.47c-.31-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.31-.48-2.5-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.62-.53-.54-.71-.55h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.6 0 1.53 1.12 3.01 1.28 3.22.16.21 2.2 3.35 5.33 4.7.74.32 1.32.51 1.77.65.74.23 1.41.2 1.94.12.59-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.23-.6-.39Z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</body>
+</html>
