@@ -65,7 +65,7 @@
     <div class="card" style="margin-top:18px;">
       <h3 style="margin-top:0;">Request a Quote</h3>
       <p style="margin-top:6px;">Tell us what you need and we’ll reply quickly.</p>
-      <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+     <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
         <input type="hidden" name="form-name" value="quote" />
         <p style="display:none;">
           <label>Don’t fill this out: <input name="bot-field" /></label>
@@ -113,5 +113,58 @@
       <span>WhatsApp</span>
     </a>
   </div>
+<!-- Success Modal -->
+<div id="successModal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:10000;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="
+    background:#fff;
+    padding:28px;
+    border-radius:14px;
+    max-width:420px;
+    width:90%;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+  ">
+    <h3 style="margin-top:0;color:#16a34a;">✅ Request Sent</h3>
+    <p>Your request was sent successfully.  
+    We will contact you shortly.</p>
+    <button class="btn" onclick="closeModal()">OK</button>
+  </div>
+</div>
+
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    body: formData
+  })
+  .then(() => {
+    form.reset();
+    document.getElementById("successModal").style.display = "flex";
+  })
+  .catch(() => {
+    alert("Something went wrong. Please try again.");
+  });
+}
+
+function closeModal() {
+  document.getElementById("successModal").style.display = "none";
+}
+</script>
+
+
 </body>
 </html>
